@@ -3,7 +3,17 @@ entries:
   housing-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-19T13:47:38.227276+01:00"
+    created: "2023-06-19T14:38:50.603762+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 25c83f2ded6c687c5f4d0de30f4ecfd1afcee6c79bdbaaca04f5850e7b1f8ca1
+    name: housing-api
+    type: application
+    urls:
+    - https://soroushkhosravi.github.io/helm-charts/housing-api-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-06-19T14:38:50.603378+01:00"
     description: A Helm chart for Kubernetes
     digest: 1902dba23b61be61e420fdcb564bef6e16a755d6e9ebcf945584ec8046868586
     name: housing-api
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://soroushkhosravi.github.io/helm-charts/housing-api-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-19T13:47:38.226542+01:00"
+generated: "2023-06-19T14:38:50.602786+01:00"

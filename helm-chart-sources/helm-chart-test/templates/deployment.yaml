@@ -16,7 +16,7 @@ spec:
       labels:
         test: "MyExampleApp"
     spec:
-      serviceAccountName: "housing-api"
+      serviceAccountName: "{{ .Values.serviceAccount }}"
       containers:
         - name: new-deployment
           image: "892893225782.dkr.ecr.us-west-2.amazonaws.com/housing-api-nginx:{{ .Values.commit }}"
