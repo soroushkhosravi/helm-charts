@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  frontend:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-06-20T16:11:57.704416+01:00"
+    description: A Helm chart for Kubernetes
+    digest: f937d58a92cde8a5bd932bdb7bc539a8131d28a9c8ed56b6df5c8302cb999fd6
+    name: frontend
+    type: application
+    urls:
+    - https://soroushkhosravi.github.io/helm-charts/frontend-0.1.0.tgz
+    version: 0.1.0
   housing-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-19T16:39:21.535957+01:00"
+    created: "2023-06-20T16:11:57.708601+01:00"
     description: A Helm chart for Kubernetes
     digest: f9c12d7cc676fecdbd962958ccb49211c966aa73151e254f2aa8f5a61066285c
     name: housing-api
@@ -13,7 +24,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-19T16:39:21.53525+01:00"
+    created: "2023-06-20T16:11:57.708206+01:00"
     description: A Helm chart for Kubernetes
     digest: e6762bba933a1abf479701179a92dee6ccd971b73885e11d1e5e03b7e9d38fc4
     name: housing-api
@@ -23,7 +34,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-19T16:39:21.534128+01:00"
+    created: "2023-06-20T16:11:57.707241+01:00"
     description: A Helm chart for Kubernetes
     digest: 25c83f2ded6c687c5f4d0de30f4ecfd1afcee6c79bdbaaca04f5850e7b1f8ca1
     name: housing-api
@@ -33,7 +44,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-19T16:39:21.532882+01:00"
+    created: "2023-06-20T16:11:57.705433+01:00"
     description: A Helm chart for Kubernetes
     digest: 1902dba23b61be61e420fdcb564bef6e16a755d6e9ebcf945584ec8046868586
     name: housing-api
@@ -41,4 +52,4 @@ entries:
     urls:
     - https://soroushkhosravi.github.io/helm-charts/housing-api-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-19T16:39:21.531818+01:00"
+generated: "2023-06-20T16:11:57.70384+01:00"
