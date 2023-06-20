@@ -30,3 +30,11 @@ helm repo index --url https://soroushkhosravi.github.io/helm-charts/ .
 ```
 
 The link that comes after of the `--url` flag is the address of the page created for the repository by the `github`. 
+
+### Updating the existing helm charts
+In order to create a new version of an already existing `helm chart`, you change the `version` in the `Chart.yaml` file of the
+related `helm chart`, then you make the required changes in the `templates` files and then, you run the following commands:
+```
+helm package helm-chart-sources/<HELM_CHART_NAME>
+helm repo index --url https://soroushkhosravi.github.io/helm-charts/ .
+```
