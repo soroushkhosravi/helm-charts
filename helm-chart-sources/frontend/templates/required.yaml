@@ -1,3 +1,4 @@
 {{- $_ := required "appName is a required value" .Values.appName}}
 {{- $_ := required "serviceAccountName is a required value" .Values.serviceAccountName}}
 {{- $_ := required "namespaceName is a required value" .Values.namespaceName}}
+{{- $_ := required "loadBalancerName is a required value" .Values.loadBalancerName}}
