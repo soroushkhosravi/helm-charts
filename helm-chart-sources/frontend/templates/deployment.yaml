@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: "terraform-example"
   labels:
-    test: "MyReactApp"
+    test: {{ .Values.appName | quote }}
   annotations:
     ad.datadoghq.com/web.logs: '[{"source": "web","service": "web","tags": ["env:prod"]}]'
 spec:
   replicas: 3
   selector:
     matchLabels:
-      test: "MyReactApp"
+      test: {{ .Values.appName | quote }}
   template:
     metadata:
       labels:
-        test: "MyReactApp"
+        test: {{ .Values.appName | quote }}
     spec:
-      serviceAccountName: "my-react-app"
+      serviceAccountName: {{ .Values.serviceAccountName | quote }}
       containers:
         - name: my-react-app-deployment
           image: "892893225782.dkr.ecr.us-west-2.amazonaws.com/my-react-app:{{ .Values.commit }}"

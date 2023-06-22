@@ -7,7 +7,7 @@ spec:
 #  type: LoadBalancer
   type: NodePort
   selector:
-    test: MyReactApp
+    test: {{ .Values.appName | quote }}
   ports:
     - protocol: TCP
       port: 80
